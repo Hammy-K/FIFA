@@ -1,0 +1,105 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #28a745;
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.game-container {
+  padding: 20px;
+  max-width: 800px;
+  margin: 20px auto;
+  background: #006400;
+  border-radius: 10px;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+#stats {
+  margin-bottom: 20px;
+}
+
+.field-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+#field {
+  position: relative;
+  width: 400px;
+  height: 600px;
+  background: #006400 url('https://upload.wikimedia.org/wikipedia/commons/a/ac/Soccer_field_transparent.png') no-repeat center center;
+  background-size: cover;
+  border: 3px solid white;
+  border-radius: 10px;
+}
+
+.position {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border: 2px dashed white;
+  border-radius: 50%;
+  text-align: center;
+  line-height: normal;
+  font-size: 10px;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  word-wrap: break-word;
+}
+
+
+[data-pos="Goalkeeper"] { top: 520px; left: 160px; }
+[data-pos="Defender1"] { top: 420px; left: 60px; }
+[data-pos="Defender2"] { top: 420px; left: 260px; }
+[data-pos="Midfielder1"] { top: 300px; left: 100px; }
+[data-pos="Midfielder2"] { top: 300px; left: 200px; }
+[data-pos="Forward1"] { top: 150px; left: 80px; }
+[data-pos="Forward2"] { top: 150px; left: 240px; }
+
+.categories {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.category {
+  background: #004d00;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 10px;
+  width: 20%;
+  min-width: 150px;
+  text-align: center;
+}
+
+.category h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.player {
+  background: #ff4500;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  cursor: grab;
+}
+
+.player:active {
+  cursor: grabbing;
+  opacity: 0.8;
+}
