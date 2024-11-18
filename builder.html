@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FIFA Dream Team Builder</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="game-container">
+    <h1>FIFA Dream Team Builder</h1>
+    <div id="stats">
+      <p>Team Rating: <span id="team-rating">0</span></p>
+    </div>
+    <div class="field-container">
+      <div id="field">
+        <!-- 7-Player Formation Positions -->
+        <div class="position" data-pos="Goalkeeper"></div>
+        <div class="position" data-pos="Defender1"></div>
+        <div class="position" data-pos="Defender2"></div>
+        <div class="position" data-pos="Midfielder1"></div>
+        <div class="position" data-pos="Midfielder2"></div>
+        <div class="position" data-pos="Forward1"></div>
+        <div class="position" data-pos="Forward2"></div>
+      </div>
+    </div>
+    <div class="player-list">
+      <h2>Available Players</h2>
+      <div class="categories">
+        <!-- Goalkeepers -->
+        <div class="category">
+          <h3>Goalkeepers</h3>
+          <div class="player" draggable="true" data-name="Alisson Becker" data-rating="90">Alisson Becker (90)</div>
+          <div class="player" draggable="true" data-name="Manuel Neuer" data-rating="89">Manuel Neuer (89)</div>
+          <div class="player" draggable="true" data-name="Mohammed Al-Owais" data-rating="85">Mohammed Al-Owais (85)</div>
+        </div>
+
+        <!-- Defenders -->
+        <div class="category">
+          <h3>Defenders</h3>
+          <div class="player" draggable="true" data-name="Virgil van Dijk" data-rating="89">Virgil van Dijk (89)</div>
+          <div class="player" draggable="true" data-name="Sergio Ramos" data-rating="88">Sergio Ramos (88)</div>
+          <div class="player" draggable="true" data-name="Achraf Hakimi" data-rating="87">Achraf Hakimi (87)</div>
+          <div class="player" draggable="true" data-name="Marquinhos" data-rating="87">Marquinhos (87)</div>
+          <div class="player" draggable="true" data-name="Mohammed Al-Breik" data-rating="80">Mohammed Al-Breik (80)</div>
+          <div class="player" draggable="true" data-name="Trent Alexander-Arnold" data-rating="86">Trent Alexander-Arnold (86)</div>
+          <div class="player" draggable="true" data-name="Kalidou Koulibaly" data-rating="86">Kalidou Koulibaly (86)</div>
+        </div>
+
+        <!-- Midfielders -->
+        <div class="category">
+          <h3>Midfielders</h3>
+          <div class="player" draggable="true" data-name="Kevin De Bruyne" data-rating="91">Kevin De Bruyne (91)</div>
+          <div class="player" draggable="true" data-name="Luka Modrić" data-rating="89">Luka Modrić (89)</div>
+          <div class="player" draggable="true" data-name="N'Golo Kanté" data-rating="89">N'Golo Kanté (89)</div>
+          <div class="player" draggable="true" data-name="Marco Verratti" data-rating="87">Marco Verratti (87)</div>
+          <div class="player" draggable="true" data-name="Mohammed Kanoo" data-rating="82">Mohammed Kanoo (82)</div>
+          <div class="player" draggable="true" data-name="Frenkie de Jong" data-rating="86">Frenkie de Jong (86)</div>
+          <div class="player" draggable="true" data-name="Joshua Kimmich" data-rating="89">Joshua Kimmich (89)</div>
+        </div>
+
+        <!-- Attackers -->
+        <div class="category">
+          <h3>Attackers</h3>
+          <div class="player" draggable="true" data-name="Lionel Messi" data-rating="94">Lionel Messi (94)</div>
+          <div class="player" draggable="true" data-name="Cristiano Ronaldo" data-rating="92">Cristiano Ronaldo (92)</div>
+          <div class="player" draggable="true" data-name="Kylian Mbappé" data-rating="92">Kylian Mbappé (92)</div>
+          <div class="player" draggable="true" data-name="Karim Benzema" data-rating="91">Karim Benzema (91)</div>
+          <div class="player" draggable="true" data-name="Salem Al-Dawsari" data-rating="85">Salem Al-Dawsari (85)</div>
+          <div class="player" draggable="true" data-name="Erling Haaland" data-rating="91">Erling Haaland (91)</div>
+          <div class="player" draggable="true" data-name="Neymar Jr" data-rating="90">Neymar Jr (90)</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
